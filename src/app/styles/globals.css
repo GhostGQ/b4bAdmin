@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+@import './tailwind.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Light Mode */
+  --color-text-primary: #000000;
+  --color-text-secondary: #fdfdfd;
+  --color-text-minory: #999999;
+  --color-text-blue: #0165ff;
+
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f0f2f4;
+
+  --color-btn-primary: #0165ff;
+
+  /* Dark Mode */
+  --color-text-primary-dark: #ffffff;
+  --color-text-secondary-dark: #e0e0e0;
+  --color-text-minory-dark: #999999;
+  --color-text-blue-dark: #4d9dff;
+
+  --color-bg-primary-dark: #0d1117;
+  --color-bg-secondary-dark: #161b22;
+
+  --color-btn-primary-dark: #0165ff;
+}
+
+* {
+  font-family: 'Onest', sans-serif;
+  box-sizing: border-box;
+}
+
+/* React Select Styles */
+.select__control {
+  border-radius: 10px !important;
+  padding-left: 8px;
+}

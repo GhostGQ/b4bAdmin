@@ -1,0 +1,32 @@
+@tailwind utilities;
+
+* {
+  @apply font-semibold;
+}
+
+body {
+  @apply bg-[#F0F2F4];
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  @apply appearance-none m-0;
+}
+
+.active-tab {
+  @apply text-[#0165FF] bg-gradient-to-b from-[#0165FF]/0 to-[#0165FF]/20;
+}
+
+/* Map Styles */
+.leaflet-control-attribution {
+  @apply hidden;
+}
+
+.leaflet-touch .leaflet-bar a {
+  @apply w-[23px] h-[27px];
+}
+
+/* React Select Styles */
+.select__value-container {
+  @apply min-h-[44px] h-fit pl-3;
+}
