@@ -82,5 +82,6 @@ const baseQueryWithReauth = async (
 export const apiPrivateSlice = createApi({
   reducerPath: 'privateApi',
   baseQuery: baseQueryWithReauth,
+  tagTypes: ['Companies', 'Company'],
   endpoints: () => ({}),
 });

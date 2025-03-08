@@ -10,6 +10,7 @@ import {
 import {ROUTES} from '@shared/config/routes';
 import {AuthLayout} from '@widgets/Layout/AuthLayout';
 import DashboardLayout from '@widgets/Layout/DashboardLayout';
+import {Companies} from '@pages/companies-page';
 
 export const routes: RouteObject[] = [
   {
@@ -28,8 +29,8 @@ export const routes: RouteObject[] = [
             // element: <Advertisement />
           },
           {
-            path: ROUTES.MAIN.ENTERPRISES,
-            // element: <Enterprices />
+            path: ROUTES.MAIN.COMPANIES,
+            element: <Companies />,
           },
           {
             path: ROUTES.MAIN.INVEST_PACKAGES,
@@ -49,11 +50,11 @@ export const routes: RouteObject[] = [
             // element: <AddCar />
           },
           {
-            path: ROUTES.NESTED.CREATE_ENTERPRISE,
+            path: ROUTES.NESTED.CREATE_COMPANY,
             // element: <AddEnterprice />
           },
           {
-            path: ROUTES.NESTED.ENTERPRISE_DETAILS,
+            path: ROUTES.NESTED.COMPANY_DETAILS,
             // element: <CompanyDetails />,
           },
           {

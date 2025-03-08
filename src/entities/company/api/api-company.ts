@@ -1,8 +1,26 @@
 import {apiPrivateSlice} from '@shared/api/apiPrivateSlices';
+import {
+  IBanner,
+  ICompany,
+  IOpportunity,
+  IProducts,
+  IService,
+  ITeam,
+  IVacancy,
+} from '../model/types';
+
+interface ICompanyGetResponse extends ICompany {
+  banners: IBanner[];
+  products: IProducts[];
+  services: IService[];
+  opportunities: IOpportunity[];
+  team: ITeam[];
+  vacancies: IVacancy[];
+}
 
 export const companyApiGetSlice = apiPrivateSlice.injectEndpoints({
   endpoints: builder => ({
-    getCompanies: builder.query({
+    getCompanies: builder.query<ICompanyGetResponse, null>({
       query: () => ({
         url: `/company/`,
         method: 'GET',
@@ -58,3 +76,12 @@ export const companyApiGetSlice = apiPrivateSlice.injectEndpoints({
     }),
   }),
 });
+
+export const {
+  useGetCompaniesQuery,
+  useGetCompanyByIdQuery,
+  useGetCompanyCategoriesQuery,
+  useAddCompanyMutation,
+  useUpdateCompanyMutation,
+  useDeleteCompanyMutation,
+} = companyApiGetSlice;

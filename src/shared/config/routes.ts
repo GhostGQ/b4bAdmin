@@ -10,14 +10,14 @@ type RoutesConfig = {
     readonly ROOT: string;
     readonly DASHBOARD: string;
     readonly ADVERTISEMENTS: string;
-    readonly ENTERPRISES: string;
+    readonly COMPANIES: string;
     readonly INVEST_PACKAGES: string;
   };
   readonly NESTED: {
     readonly ADD_BUILDING: string;
     readonly ADD_CAR: string;
-    readonly CREATE_ENTERPRISE: string;
-    readonly ENTERPRISE_DETAILS: string;
+    readonly CREATE_COMPANY: string;
+    readonly COMPANY_DETAILS: string;
     readonly CREATE_INVEST_PACKAGE: string;
     readonly INVEST_PACKAGE_DETAILS: string;
   };
@@ -36,14 +36,14 @@ export const ROUTES: RoutesConfig = {
     ROOT: '/',
     DASHBOARD: '/',
     ADVERTISEMENTS: '/elonlarim',
-    ENTERPRISES: '/korxonalarim',
+    COMPANIES: '/korxonalarim',
     INVEST_PACKAGES: '/investpaketlarim',
   },
   NESTED: {
     ADD_BUILDING: '/elonlarim/xonadonlar/:id',
     ADD_CAR: '/elonlarim/avtomobillar/:id',
-    CREATE_ENTERPRISE: '/korxonalarim/yaratish',
-    ENTERPRISE_DETAILS: '/korxonalarim/:name',
+    CREATE_COMPANY: '/korxonalarim/yaratish',
+    COMPANY_DETAILS: '/korxonalarim/:name',
     CREATE_INVEST_PACKAGE: '/investpaketlarim/yaratish',
     INVEST_PACKAGE_DETAILS: '/investpaketlarim/:name',
   },

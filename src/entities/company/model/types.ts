@@ -36,3 +36,20 @@ export interface IOpportunity {
   description: string;
   photo: string;
 }
+
+export interface ITeam {
+  full_name: string;
+  position_at_work: string;
+  photo: string;
+}
+
+export interface IVacancy {
+  name: string;
+  description: string;
+  salary_from: number;
+  salary_to: number;
+  currency: string;
+  photo: string;
+  created_at: Date;
+  company: number;
+}

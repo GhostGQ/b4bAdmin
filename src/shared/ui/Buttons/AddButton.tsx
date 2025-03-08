@@ -7,7 +7,7 @@ interface Props {
   toPath: string;
 }
 
-const AddButton = ({plus, text, toPath}: Props) => {
+export const AddButton = ({plus, text, toPath}: Props) => {
   return (
     <Link
       to={toPath}
@@ -18,4 +18,3 @@ const AddButton = ({plus, text, toPath}: Props) => {
   );
 };
 
-export default AddButton;
